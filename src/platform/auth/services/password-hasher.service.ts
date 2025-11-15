@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { PasswordHasher } from 'src/platform/auth/interfaces/password-hasher.interface';
-import { AuthConfigService } from 'src/platform/auth/config/auth-config.service';
-import { SaltManagerService } from 'src/platform/auth/services/salt-manager.service';
 import * as argon2 from 'argon2';
+
+import { PasswordHasher } from 'src/platform/auth/interfaces';
+import { AuthConfigService } from 'src/platform/auth/config';
+import { SaltManagerService } from 'src/platform/auth/services';
 
 @Injectable()
 export class PasswordHasherService implements PasswordHasher {

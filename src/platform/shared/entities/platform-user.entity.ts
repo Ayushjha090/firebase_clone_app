@@ -2,7 +2,7 @@ import {
   PlatformUserPrisma,
   PlatformUserPrismaCreate,
   PlatformUserPrismaPublic,
-} from 'src/platform/shared/types/platform-user-prisma.type';
+} from 'src/platform/shared/types';
 
 export class PlatformUser {
   constructor(

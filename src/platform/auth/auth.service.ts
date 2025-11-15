@@ -4,13 +4,10 @@ import type {
   UserRepository,
   PasswordHasher,
 } from 'src/platform/auth/interfaces';
-import { PlatformUser } from 'src/platform/shared/entities/platform-user.entity';
+import { PlatformUser } from 'src/platform/shared/entities';
 import { UserAlreadyExistsException } from 'src/platform/shared/exceptions';
 import { RegisterPlatformUserDto } from 'src/platform/auth/dto';
-import {
-  PASSWORD_HASHER,
-  USER_REPOSITORY,
-} from 'src/platform/auth/tokens/auth.token';
+import { PASSWORD_HASHER, USER_REPOSITORY } from 'src/platform/auth/tokens';
 
 @Injectable()
 export class AuthService {

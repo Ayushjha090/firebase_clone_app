@@ -2,7 +2,7 @@ import { Body, Controller, Post } from '@nestjs/common';
 
 import { BaseController } from 'src/common/controllers';
 import { AuthService } from 'src/platform/auth/auth.service';
-import { RegisterPlatformUserDto } from './dto';
+import { RegisterPlatformUserDto } from 'src/platform/auth/dto';
 import { ApiResponseDto } from 'src/common/dto';
 import { PlatformUser } from 'src/platform/shared/entities/platform-user.entity';
 import { PlatformUserPrismaPublic } from 'src/platform/shared/types/platform-user-prisma.type';

@@ -1,4 +1,3 @@
-// src/common/filters/global-exception.filter.ts
 import {
   ExceptionFilter,
   Catch,
@@ -7,7 +6,7 @@ import {
   HttpStatus,
   Logger,
 } from '@nestjs/common';
-import { ApiResponseDto } from '../dto/api-response.dto';
+import { ApiResponseDto } from 'src/common/dto';
 
 @Catch()
 export class GlobalExceptionFilter implements ExceptionFilter {

@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { AuthConfigService } from 'src/platform/auth/config/auth-config.service';
 import * as crypto from 'crypto';
+
+import { AuthConfigService } from 'src/platform/auth/config';
 
 @Injectable()
 export class SaltManagerService {

@@ -1,11 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 
+import { PrismaModule } from 'src/prisma/prisma.module';
 import { AuthController } from 'src/platform/auth/auth.controller';
 import { AuthService } from 'src/platform/auth/auth.service';
-import authConfig from 'src/platform/auth/config/configuration';
-import { PrismaModule } from 'src/prisma/prisma.module';
-import { AuthConfigService } from 'src/platform/auth/config/auth-config.service';
+import { authConfig, AuthConfigService } from 'src/platform/auth/config/';
 import { SaltManagerService } from 'src/platform/auth/services/salt-manager.service';
 import { PasswordHasherService } from 'src/platform/auth/services/password-hasher.service';
 import { PrismaUserRepositoryService } from 'src/platform/auth/repositories/prisma-user-repository.service';
